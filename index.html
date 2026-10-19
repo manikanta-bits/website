@@ -1,209 +1,325 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f5f4ef" />
-    <meta
-      name="description"
-      content="Morrow is an independent software development company helping ambitious teams design, build, and grow dependable digital products."
-    />
-    <meta property="og:title" content="Morrow Software | Build what moves you forward" />
-    <meta
-      property="og:description"
-      content="Product engineering, platform modernization, and thoughtful software for ambitious teams."
-    />
-    <meta property="og:type" content="website" />
-    <title>Morrow Software | Build what moves you forward</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://images.unsplash.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Morrow Software home">
-        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="brand-name">morrow<span class="brand-period">.</span></span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeWiDas Software Solutions Pvt Ltd | Software Development Company</title>
+  <meta name="description" content="CodeWiDas Software Solutions builds websites, software, Android apps, AI solutions and IT consulting for businesses.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader"><img src="assets/logo.png" alt="" class="preloader-logo"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="CodeWiDas home">
+        <img src="assets/logo.png" alt="CodeWiDas logo" class="brand-logo">
+        <span class="brand-text">CodeWiDas<small>Software Solutions</small></span>
       </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
-        <span></span><span></span>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <a href="#services">What we do</a>
-        <a href="#approach">Our approach</a>
-        <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#why-us" class="nav-link">Why Choose Us</a>
+        <a href="#team" class="nav-link">Our Team</a>
+        <a href="#contact" class="nav-link nav-cta">Contact Us</a>
       </nav>
-    </header>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <main id="main">
-      <section class="hero section-shell" id="top">
-        <div class="hero-copy reveal is-visible">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Independent software company</p>
-          <h1>Complex ideas.<br /><span class="headline-accent">Clear momentum.</span></h1>
-          <p class="hero-intro">We design and build the digital products, platforms, and systems that move businesses forward.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#services">Explore our work <span aria-hidden="true">↓</span></a>
-          </div>
-            <div class="hero-note"><span class="note-rule"></span><span>Small senior teams. Built to adapt.</span></div>
-        </div>
-
-          <div class="hero-visual reveal is-visible">
-            <div class="system-preview" id="system-preview" data-mode="product">
-              <div class="preview-chrome">
-                <div class="preview-brand"><span class="preview-mark" aria-hidden="true">m</span><span>MORROW / WORKSHOP</span></div>
-                <span class="preview-live"><i></i> INTERACTIVE CONCEPT</span>
-              </div>
-              <div class="preview-heading">
-                <div><span class="preview-overline">SYSTEMS MAP / 01</span><h2 id="preview-title">Product ecosystem</h2></div>
-                <span class="preview-build">BUILD 1.04</span>
-              </div>
-              <div class="preview-tabs" role="tablist" aria-label="Software system preview">
-                <button class="preview-tab" id="tab-product" type="button" role="tab" aria-selected="true" aria-controls="preview-panel" tabindex="0" data-mode="product" data-title="Product ecosystem" data-summary="Customer experience · 3 connected modules">Product</button>
-                <button class="preview-tab" id="tab-platform" type="button" role="tab" aria-selected="false" aria-controls="preview-panel" tabindex="-1" data-mode="platform" data-title="Platform architecture" data-summary="Services · Infrastructure · Observability">Platform</button>
-                <button class="preview-tab" id="tab-data" type="button" role="tab" aria-selected="false" aria-controls="preview-panel" tabindex="-1" data-mode="data" data-title="Data intelligence" data-summary="Events · Models · Decisions">Data</button>
-              </div>
-              <div class="preview-panel" id="preview-panel" role="tabpanel" aria-labelledby="tab-product" tabindex="0">
-                <div class="map-caption"><span id="preview-summary">Customer experience · 3 connected modules</span><span>● ALL SYSTEMS READY</span></div>
-                <div class="system-canvas" aria-label="Connected software modules: storefront, API, payments, identity, and insights">
-                  <svg class="system-lines" viewBox="0 0 600 300" preserveAspectRatio="none" aria-hidden="true">
-                    <path class="map-line" d="M130 77 C190 77 203 140 270 140" />
-                    <path class="map-line" d="M328 140 C390 140 400 76 466 76" />
-                    <path class="map-line" d="M130 225 C195 225 205 159 270 159" />
-                    <path class="map-line" d="M328 159 C390 159 403 225 466 225" />
-                    <path class="map-flow" d="M130 77 C190 77 203 140 270 140 C328 140 390 140 466 76" />
-                    <circle class="map-junction" cx="300" cy="150" r="4" />
-                  </svg>
-                  <div class="system-node node-storefront"><span class="node-icon node-web" aria-hidden="true">W</span><span><small>EXPERIENCE</small><strong>Storefront</strong></span><i></i></div>
-                  <div class="system-node node-identity"><span class="node-icon node-id" aria-hidden="true">ID</span><span><small>AUTH</small><strong>Identity</strong></span><i></i></div>
-                  <div class="system-node node-core"><span class="node-icon node-api" aria-hidden="true">API</span><span><small>CORE SERVICE</small><strong>Commerce API</strong></span><i></i></div>
-                  <div class="system-node node-payments"><span class="node-icon node-pay" aria-hidden="true">$</span><span><small>TRANSACTIONS</small><strong>Payments</strong></span><i></i></div>
-                  <div class="system-node node-insights"><span class="node-icon node-data" aria-hidden="true">D</span><span><small>INTELLIGENCE</small><strong>Insights</strong></span><i></i></div>
-                </div>
-                <div class="preview-footer"><span><i></i> 5 MODULES CONNECTED</span><span>DESIGNED FOR CHANGE <b aria-hidden="true">↗</b></span></div>
-              </div>
-            </div>
-        </div>
-        <div class="hero-side-label" aria-hidden="true">MAKE ROOM FOR WHAT'S NEXT</div>
-      </section>
-
-      <section class="signal-bar" aria-label="Our focus areas">
-        <div class="signal-inner">
-          <p>Good work starts with the right questions.</p>
-          <div class="signal-items"><span>PRODUCT ENGINEERING</span><i></i><span>CLOUD & PLATFORMS</span><i></i><span>DATA & AUTOMATION</span></div>
-        </div>
-      </section>
-
-      <section class="services section-shell" id="services">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow"><span class="eyebrow-dot"></span> How we help</p>
-            <h2>From tricky first step<br />to <span class="serif-accent">lasting advantage.</span></h2>
-          </div>
-          <p class="section-intro">The right team for the hard parts: finding the signal, making a plan, and building software people can count on.</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <div class="service-top"><span class="service-number">01</span><span class="service-icon icon-product" aria-hidden="true"><i></i><i></i><i></i></span></div>
-            <h3>Digital products</h3>
-            <p>Thoughtful web and mobile experiences, shaped around real customer needs and built to keep getting better.</p>
-            <ul><li>Product discovery</li><li>Web & mobile apps</li><li>Design systems</li></ul>
-          </article>
-          <article class="service-card service-card-featured reveal">
-            <div class="service-top"><span class="service-number">02</span><span class="service-icon icon-platform" aria-hidden="true"><i></i><i></i></span></div>
-            <h3>Platforms & cloud</h3>
-            <p>Modern foundations that make your systems easier to run, evolve, and trust as your business grows.</p>
-            <ul><li>Platform modernization</li><li>Cloud architecture</li><li>Reliability engineering</li></ul>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-top"><span class="service-number">03</span><span class="service-icon icon-data" aria-hidden="true"><i></i><i></i><i></i></span></div>
-            <h3>Data & automation</h3>
-            <p>Useful intelligence and carefully applied automation that gives teams more time for meaningful work.</p>
-            <ul><li>Data platforms</li><li>Applied AI</li><li>Workflow automation</li></ul>
-          </article>
-        </div>
-        <div class="services-foot reveal"><span>Small senior teams. End-to-end ownership.</span><a class="text-link" href="#contact">Tell us what you're building <span aria-hidden="true">↗</span></a></div>
-      </section>
-
-      <section class="manifesto" id="approach">
-        <div class="manifesto-grid section-shell">
-          <div class="manifesto-art reveal" aria-hidden="true">
-            <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div><div class="art-core"><span>M</span></div>
-            <span class="art-label art-label-top">BUILT TO ADAPT</span><span class="art-label art-label-bottom">MADE TO MATTER</span>
-            <span class="art-cross cross-one">+</span><span class="art-cross cross-two">+</span>
-          </div>
-          <div class="manifesto-copy reveal">
-            <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> A better way to build</p>
-            <h2>Less theatre.<br /><span>More forward.</span></h2>
-            <p class="manifesto-intro">No mystery process. No big reveal at the end. Just experienced people, honest conversations, and steady progress you can see.</p>
-            <div class="principles">
-              <div><span class="principle-mark">A</span><p><strong>Start with the why</strong><br />We get close to the problem before we reach for a solution.</p></div>
-              <div><span class="principle-mark">B</span><p><strong>Build in the open</strong><br />You stay in the loop, with working software early and often.</p></div>
-              <div><span class="principle-mark">C</span><p><strong>Leave you stronger</strong><br />We share knowledge and make sure your team can own what we build.</p></div>
-            </div>
-            <a class="button button-light" href="#contact">Meet your build team <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="steps section-shell">
-        <div class="section-heading steps-heading reveal">
-          <div><p class="eyebrow"><span class="eyebrow-dot"></span> Clear from day one</p><h2>A simple path<br />to <span class="serif-accent">real progress.</span></h2></div>
-          <p class="section-intro">The shape of the work changes. The way we work together stays clear.</p>
-        </div>
-        <div class="step-grid">
-          <article class="step-item reveal"><span class="step-count">01 <i></i></span><h3>Get aligned</h3><p>We learn your goals, constraints, and users, then agree on what success looks like.</p></article>
-          <article class="step-item reveal"><span class="step-count">02 <i></i></span><h3>Make it real</h3><p>We work in short cycles, share progress early, and adapt as we learn.</p></article>
-          <article class="step-item reveal"><span class="step-count">03 <i></i></span><h3>Keep it moving</h3><p>We launch with care, transfer context, and help you plan the next right thing.</p></article>
-        </div>
-      </section>
-
-      <section class="contact section-shell" id="contact">
-        <div class="contact-copy reveal">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Your next chapter starts here</p>
-          <h2>Have a good<br />problem to <span class="serif-accent">solve?</span></h2>
-          <p>Tell us what's on your mind. We'll get back to you with a thoughtful next step, not a sales script.</p>
-          <a class="contact-email" href="mailto:machkurimanikanta53@gmail.com">machkurimanikanta53@gmail.com <span aria-hidden="true">↗</span></a>
-        </div>
-        <form class="contact-form" id="contact-form" action="https://formsubmit.co/machkurimanikanta53@gmail.com" method="POST">
-          <div class="form-row">
-            <label for="name">Your name</label>
-            <input id="name" name="name" autocomplete="name" placeholder="Name" required />
-          </div>
-          <div class="form-row">
-            <label for="email">Work email</label>
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
-          </div>
-          <div class="form-row">
-            <label for="message">A little about the project</label>
-            <textarea id="message" name="message" rows="3" placeholder="What are you looking to make possible?" required></textarea>
-          </div>
-          <button class="button button-primary form-submit" type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
-          <p class="form-note">Your details are sent to FormSubmit to deliver your inquiry.</p>
-          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
-          <a class="form-mail-link" id="form-mail-link" href="mailto:machkurimanikanta53@gmail.com" hidden>Open email app instead <span aria-hidden="true">↗</span></a>
-          <textarea class="form-draft" id="form-draft" aria-label="Email draft to copy" readonly hidden></textarea>
-        </form>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-main section-shell">
-        <a class="brand brand-footer" href="#top" aria-label="Morrow Software home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">morrow<span class="brand-period">.</span></span></a>
-        <p>Software for the next version<br />of your business.</p>
-        <a class="footer-back" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid-overlay"></div>
       </div>
-      <div class="footer-bottom section-shell"><span>© <span id="year"></span> Morrow Software</span><span>Independent by nature. Collaborative by design.</span><span>Built with care <b aria-hidden="true">✳</b></span></div>
-    </footer>
-  </body>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow">Engineering the digital future</span>
+          <h1 class="hero-title">Code that <span class="gradient-text">Builds Your Business</span></h1>
+          <p class="hero-sub">CodeWiDas Software Solutions Pvt Ltd designs and delivers websites, enterprise software, mobile apps and AI solutions that help organisations grow faster and operate smarter.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+            <a href="#services" class="btn btn-ghost">Explore Services</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong class="counter" data-target="150">0</strong><span>+ Projects</span></div>
+            <div><strong class="counter" data-target="80">0</strong><span>+ Clients</span></div>
+            <div><strong class="counter" data-target="12">0</strong><span>+ Years</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="glass-card">
+            <div class="code-window">
+              <div class="dots"><span></span><span></span><span></span></div>
+<pre><code><span class="k">const</span> <span class="v">company</span> = {
+  name: <span class="s">"CodeWiDas"</span>,
+  services: [<span class="s">"Web"</span>, <span class="s">"Software"</span>, <span class="s">"Mobile"</span>, <span class="s">"AI"</span>],
+  mission: <span class="s">"Quality. Speed. Trust."</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">About Us</span>
+          <h2>Built on vision, driven by purpose</h2>
+          <p>We are a software development company focused on turning complex business problems into clean, scalable digital products.</p>
+        </div>
+        <div class="about-grid">
+          <div class="tilt-card reveal">
+            <div class="icon-circle">&#127919;</div>
+            <h3>Our Vision</h3>
+            <p>To be a globally trusted technology partner, recognised for innovation, integrity and engineering excellence.</p>
+          </div>
+          <div class="tilt-card reveal">
+            <div class="icon-circle">&#128640;</div>
+            <h3>Our Mission</h3>
+            <p>Deliver reliable, secure and user-centred software that measurably improves how our clients work and serve their customers.</p>
+          </div>
+          <div class="tilt-card reveal">
+            <div class="icon-circle">&#127942;</div>
+            <h3>Our Goals</h3>
+            <ul class="check-list">
+              <li>Long-term partnerships with every client</li>
+              <li>Continuous upskilling of our engineers</li>
+              <li>Responsible, ethical use of AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Services</span>
+          <h2>End-to-end solutions for every stage</h2>
+          <p>From first idea to long-term support, our teams cover the full technology lifecycle.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">&#127760;</div>
+            <h3>Website Development</h3>
+            <p>Fast, SEO-ready, responsive websites and web portals built with modern frameworks.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon">&#9881;&#65039;</div>
+            <h3>Software Development</h3>
+            <p>Custom enterprise applications, ERP and CRM systems, and workflow automation.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon">&#128241;</div>
+            <h3>Android App Development</h3>
+            <p>Native and cross-platform Android applications with polished, intuitive interfaces.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon">&#129504;</div>
+            <h3>AI Solutions</h3>
+            <p>Machine learning, chatbots, document intelligence and predictive analytics for real business value.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon">&#128202;</div>
+            <h3>IT Consulting</h3>
+            <p>Technology strategy, digital transformation roadmaps, cloud migration and architecture reviews.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Projects</span>
+          <h2>Work that speaks for itself</h2>
+          <p>A selection of recent projects across industries.</p>
+        </div>
+        <div class="filter-bar reveal" id="filterBar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="ai">AI</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card reveal" data-category="web">
+            <div class="project-thumb t1"><span>Web</span></div>
+            <div class="project-body"><h3>Retail E-Commerce Platform</h3><p>High-conversion storefront with real-time inventory.</p></div>
+          </article>
+          <article class="project-card reveal" data-category="software">
+            <div class="project-thumb t2"><span>ERP</span></div>
+            <div class="project-body"><h3>Manufacturing ERP Suite</h3><p>End-to-end production, procurement and billing system.</p></div>
+          </article>
+          <article class="project-card reveal" data-category="mobile">
+            <div class="project-thumb t3"><span>Android</span></div>
+            <div class="project-body"><h3>Healthcare Booking App</h3><p>Appointment booking and telehealth for patients.</p></div>
+          </article>
+          <article class="project-card reveal" data-category="ai">
+            <div class="project-thumb t4"><span>AI</span></div>
+            <div class="project-body"><h3>Document Intelligence Engine</h3><p>Automated extraction and classification of invoices.</p></div>
+          </article>
+          <article class="project-card reveal" data-category="web">
+            <div class="project-thumb t5"><span>Web</span></div>
+            <div class="project-body"><h3>Corporate Website Revamp</h3><p>Modern, accessible site with a headless CMS.</p></div>
+          </article>
+          <article class="project-card reveal" data-category="ai">
+            <div class="project-thumb t6"><span>AI</span></div>
+            <div class="project-body"><h3>Customer Support Chatbot</h3><p>Multilingual assistant that resolves common queries.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2>What sets CodeWiDas apart</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-item reveal"><span class="why-num">01</span><h3>Senior-led teams</h3><p>Experienced engineers and architects on every engagement.</p></div>
+          <div class="why-item reveal"><span class="why-num">02</span><h3>Agile delivery</h3><p>Transparent sprints, regular demos and fast feedback loops.</p></div>
+          <div class="why-item reveal"><span class="why-num">03</span><h3>Security first</h3><p>Secure coding, code reviews and compliance-aware design.</p></div>
+          <div class="why-item reveal"><span class="why-num">04</span><h3>Scalable architecture</h3><p>Systems designed to grow from hundreds to millions of users.</p></div>
+          <div class="why-item reveal"><span class="why-num">05</span><h3>Dedicated support</h3><p>Post-launch maintenance and a named point of contact.</p></div>
+          <div class="why-item reveal"><span class="why-num">06</span><h3>Fair, clear pricing</h3><p>Fixed-scope or flexible models, with no hidden costs.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Team</span>
+          <h2>The people behind the code</h2>
+          <p>Replace these placeholder profiles with your real team details.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="avatar">MK</div>
+            <h3>Manikanta Kumar</h3>
+            <span class="role">Founder &amp; CEO</span>
+          </article>
+          <article class="team-card reveal">
+            <div class="avatar">PR</div>
+            <h3>Priya Reddy</h3>
+            <span class="role">Chief Technology Officer</span>
+          </article>
+          <article class="team-card reveal">
+            <div class="avatar">AS</div>
+            <h3>Arjun Sharma</h3>
+            <span class="role">Lead AI Engineer</span>
+          </article>
+          <article class="team-card reveal">
+            <div class="avatar">SN</div>
+            <h3>Sneha Nair</h3>
+            <span class="role">Head of Design</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="eyebrow">Contact Us</span>
+          <h2>Let's build something great</h2>
+          <p>Tell us about your idea and our team will get back to you within one business day.</p>
+          <ul class="contact-list">
+            <li><span>&#9993;</span> <a href="mailto:hello@codewidas.com">hello@codewidas.com</a></li>
+            <li><span>&#9742;</span> <a href="tel:+910000000000">+91 00000 00000</a></li>
+            <li><span>&#128205;</span> Hyderabad, Telangana, India</li>
+          </ul>
+        </div>
+        <form class="contact-form glass-card reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <input type="text" id="name" name="name" required placeholder=" ">
+              <label for="name">Full name</label>
+              <small class="error" data-for="name"></small>
+            </div>
+            <div class="field">
+              <input type="email" id="email" name="email" required placeholder=" ">
+              <label for="email">Email address</label>
+              <small class="error" data-for="email"></small>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <input type="tel" id="phone" name="phone" placeholder=" ">
+              <label for="phone">Phone (optional)</label>
+            </div>
+            <div class="field">
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Website Development</option>
+                <option>Software Development</option>
+                <option>Android App Development</option>
+                <option>AI Solutions</option>
+                <option>IT Consulting</option>
+              </select>
+              <small class="error" data-for="service"></small>
+            </div>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Project details</label>
+            <small class="error" data-for="message"></small>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader"></span>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="" class="footer-logo">
+        <p>CodeWiDas Software Solutions Pvt Ltd</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copy">&copy; <span id="year"></span> CodeWiDas. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
